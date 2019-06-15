@@ -713,3 +713,12 @@ on property:vendor.opengles.version=*
 #Set gpu available frequencies property
 on property:vendor.gpu.available_frequencies=*
     setprop ro.vendor.gpu.available_frequencies ${vendor.gpu.available_frequencies}
+
+
+# Set Display's Colour Configuration to My Custom Profile (kCAL v2.0 Settings)---
+	write /sys/devices/platform/kcal_ctrl.0/kcal_min 35
+	write /sys/devices/platform/kcal_ctrl.0/kcal_sat 265
+	write /sys/devices/platform/kcal_ctrl.0/kcal_val 247
+	write /sys/devices/platform/kcal_ctrl.0/kcal_cont 259
+	write /sys/devices/platform/kcal_ctrl.0/kcal 230 230 230
+
