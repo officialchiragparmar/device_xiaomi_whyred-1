@@ -25,12 +25,12 @@ $(call inherit-product, device/xiaomi/whyred/device.mk)
 # Inherit from custom vendor
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
-# Inherit some common PixelExperience stuff.
+# Inherit some common ReloadedCAF stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/reloaded/common.mk)
 
-PRODUCT_NAME := aosp_whyred
+PRODUCT_NAME := reloaded_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
